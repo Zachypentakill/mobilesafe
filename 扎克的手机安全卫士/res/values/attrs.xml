@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MySettingViewLayout">
+        <attr name="title" format="string" />
+         <attr name="isToggle" format="boolean" />
+          <attr name="src" format="reference|color" />
+    </declare-styleable>
+
+</resources>

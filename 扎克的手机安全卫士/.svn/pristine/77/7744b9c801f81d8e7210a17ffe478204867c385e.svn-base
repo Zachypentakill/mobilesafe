@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bkg"
+        >
+        <!-- layout_centerVertical : 垂直居中 
+             layout_marginLeft : 距离父控件左边框的距离
+        -->
+        <ImageView 
+            android:id="@+id/home_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <!-- layout_toRightOf : 在某个控件的右边 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/home_iv_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+            <!-- textStyle : 设置文本样式 bold：加粗 normal：正常 italic：斜体-->
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="传智手机卫士"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <!-- singleLine : 单行显示 
+                 ellipsize : 设置文本显示的样式
+                 		none ： 隐藏后面的文本
+                 		start : 省略前面的文本
+                 		middle ： 省略中间的文本
+                 		end ： 省略后面的文本，默认效果
+                 		marquee ： 滚动文本的效果，只有获取焦点才会进行滚动操作
+                 focusableInTouchMode : 触摸获取焦点
+                                                   但是TextView天生是没有焦点
+                 focusable : 设置控件是否可以获取焦点，true:可以，false:不可以
+                 marqueeRepeatLimit : 设置滚动的次数，marquee_forever ： 一直滚动，值都是-1
+            -->
+            <!-- <TextView 
+                android:id="@+id/home_tv_scrolltextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="传智手机卫士,www.itcast.cn,64核真杀毒引擎，打开7次可以召唤神龙，辅助杀毒..."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_marginTop="5dp"
+                /> -->
+        </LinearLayout>
+        <!-- layout_margin : 控件距离父控件上下左右边框的距离 
+             ImageButton : 设置显示图片的按钮
+             Button：设置显示文本的按钮
+        -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/selector_home_setting"
+            android:onClick="enterSetting"
+            />
+        
+    </RelativeLayout>
+    
+    <!-- numColumns : 设置gridview显示的列数 
+         horizontalSpacing : 设置列的距离
+         verticalSpacing : 设置行与行之间的距离
+    -->
+    <GridView 
+        android:id="@+id/home_gv_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        ></GridView>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

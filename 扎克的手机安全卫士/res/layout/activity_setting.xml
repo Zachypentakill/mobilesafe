@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zachy="http://schemas.android.com/apk/res/com.zachy.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/MyTittleStytle"
+        android:text="设置中心"
+        android:textStyle="bold" />
+
+    <com.zachy.ui.MySettingViewLayout
+        android:id="@+id/setting_msv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        zachy:isToggle="true"
+        android:background="@drawable/selector_home_setting_firstswitch"
+        zachy:title="设置自动更新"
+        android:onClick="updateSetting" >
+    </com.zachy.ui.MySettingViewLayout>
+
+    <com.zachy.ui.MySettingViewLayout
+        android:id="@+id/setting_msv_antiSpamMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zachy:title="设置骚扰拦截" 
+        zachy:isToggle="true"
+        android:onClick="antiSpamSetting"
+        android:background="@drawable/selector_home_setting_lastswitch">
+    </com.zachy.ui.MySettingViewLayout>
+
+    <com.zachy.ui.MySettingViewLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/setting_msv_belonging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zachy:isToggle="true"
+      	 android:background="@drawable/selector_home_setting_firstswitch"
+        zachy:title="归属地显示设置" >
+    </com.zachy.ui.MySettingViewLayout>
+
+    <com.zachy.ui.MySettingViewLayout
+        android:id="@+id/setting_msv_belongingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zachy:title="归属地风格设置" 
+        zachy:isToggle="False"
+        android:background="@drawable/selector_home_setting_lastswitch">
+    </com.zachy.ui.MySettingViewLayout>
+
+</LinearLayout>

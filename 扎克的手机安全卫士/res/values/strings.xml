@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">扎克的手机安全卫士</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>

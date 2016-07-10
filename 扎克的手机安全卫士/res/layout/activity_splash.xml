@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/splash"
+	   	>
+		<!-- layout_alignParentBottom : 在父控件的底部显示 
+		     layout_centerHorizontal : 水平居中
+		     layout_marginBottom : 距离父控件底部的边框的距离
+		     shadowColor : 阴影颜色
+		     shadowDx : 阴影偏移量
+		     shadowRadius : 阴影的角度
+		-->
+	    <TextView
+	        android:id="@+id/splash_tv_version"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="版本:1.0" 
+	        android:textSize="18sp"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="10dp"
+	        android:shadowColor="#00FF00"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="2"
+	        />
+	
+	</RelativeLayout>
